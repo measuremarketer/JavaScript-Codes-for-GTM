@@ -7,4 +7,13 @@ links.forEach(function change(link) {
 });
 })();
 
-// finds all the href links on a page and changes the links for each of them.
+// finds all the href links on a page and attach the link with a query parameter
+
+
+(function () {
+var links = document.querySelectorAll('a[href$=".pdf"]');
+links.forEach(function change(link) {
+    link.href = "https://www.makemarketer.com/download-brochure.pdf";
+});
+})();
+ //find all href links that ends with .pdf and change tham to the new link.
