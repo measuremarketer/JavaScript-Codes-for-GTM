@@ -1,3 +1,5 @@
+//finds all the href links on a page and attach the link with a query parameter
+
 (function () {
 var links = document.querySelectorAll('a[href$=".pdf"]');
 var attchmentString = "?utm_source=prashanth";
@@ -7,8 +9,8 @@ links.forEach(function change(link) {
 });
 })();
 
-// finds all the href links on a page and attach the link with a query parameter
-
+ 
+ //find all href links that ends with .pdf and change tham to the new link.
 
 (function () {
 var links = document.querySelectorAll('a[href$=".pdf"]');
@@ -16,4 +18,14 @@ links.forEach(function change(link) {
     link.href = "https://www.makemarketer.com/download-brochure.pdf";
 });
 })();
- //find all href links that ends with .pdf and change tham to the new link.
+ 
+ 
+ //replace all the links that have the program-curriculum.pdf to program-brochure.pdf
+ 
+(function () {
+var newLinks = document.querySelectorAll('a[href$=".pdf"]');
+newLinks.forEach(function (link) {
+    link.href = link.href.replace(/program\-curriculum\.pdf/g, "program-brochure.pdf");
+})
+})();
+
