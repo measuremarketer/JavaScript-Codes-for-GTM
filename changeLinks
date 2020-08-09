@@ -1,0 +1,10 @@
+(function () {
+var links = document.querySelectorAll('a[href$=".pdf"]');
+var attchmentString = "?utm_source=prashanth";
+links.forEach(function change(link) {
+    var original = link.getAttribute("href");
+    link.setAttribute("href", original+attchmentString);
+});
+})();
+
+// finds all the href links on a page and changes the links for each of them.
