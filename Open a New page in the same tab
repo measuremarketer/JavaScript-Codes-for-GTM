@@ -1,0 +1,9 @@
+window.open("https://www.measuremarketer.com/start-application/", "_self"); 
+//this will open a new page in the same tab
+
+window.open("https://www.makemarketer.com/download-brochure.pdf");
+// this will open the brochure in a new tab
+
+window.location.href = "https://www.measuremarketer.com/start-application/";
+// page refreshes and loads the new oage in the same tab
+
