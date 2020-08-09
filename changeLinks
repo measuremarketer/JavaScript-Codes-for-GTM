@@ -22,12 +22,24 @@ links.forEach(function change(link) {
 })();
  
  
- //replace all the links that have the program-curriculum.pdf to program-brochure.pdf
+ //replace all the links that have the program-curriculum.pdf to program-brochure.pdf using replace method
  
 (function () {
 var newLinks = document.querySelectorAll('a[href$=".pdf"]');
 newLinks.forEach(function (link) {
     link.href = link.href.replace(/program\-curriculum\.pdf/g, "program-brochure.pdf");
+})
+})();
+
+//replace all the links by using replace method with variables and not actual values (ABOVE is also similar)
+// you can declare variables that store the search string and replace string and use them in the replace method
+
+(function () {
+var newLinks = document.querySelectorAll('a[href$=".pdf"]');
+newLinks.forEach(function (link) {
+    var search = "program-curriculum.pdf";
+    var replace = "program-brochure.pdf";
+    link.href = link.href.replace(search, replace);
 })
 })();
 
