@@ -1,3 +1,5 @@
+// Written by Prashanth Reniguntala, CEO - Measure Marketer
+
 //finds all the href links on a page and attach the link with a query parameter
 
 (function () {
