@@ -1,6 +1,6 @@
-// Written by Prashanth Reniguntala, CEO - Measure Marketer
+// Written by Prashanth Reniguntala, CEO - Measure Marketer (Formerly Make Marketer)
 
-//finds all the href links on a page and attach the link with a query parameter
+//finds all the href links on a page and attach the link with a query parameter with getAttribute and setAttribute methods
 
 (function () {
 var links = document.querySelectorAll('a[href$=".pdf"]');
@@ -12,7 +12,7 @@ links.forEach(function change(link) {
 })();
 
  
- //find all href links that ends with .pdf and change tham to the new link.
+ //find all href links that ends with .pdf and change them to the new link directly.
 
 (function () {
 var links = document.querySelectorAll('a[href$=".pdf"]');
