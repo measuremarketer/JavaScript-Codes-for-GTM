@@ -7,3 +7,5 @@ window.open("https://www.makemarketer.com/download-brochure.pdf");
 window.location.href = "https://www.measuremarketer.com/start-application/";
 // page refreshes and loads the new oage in the same tab
 
+location.assign("https://www.measuremarketer.com/start-application/");
+// loads the new page in the same tab
