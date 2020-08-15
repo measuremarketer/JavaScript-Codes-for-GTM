@@ -1,0 +1,9 @@
+// Retrive the GA client ID and send them as a Custom Dimension to GA
+
+function(){
+  return ga.getAll()[0].get('clientId');
+}
+// u can check by doing console.log(ga.getAll());
+// go to the first node(index 0), i.e. console.log(ga.getAll()[0]);
+// then from the object, try to get the value of the client ID
+// console.log(ga.getAll()[0].get('client'));
