@@ -3,7 +3,7 @@
 //finds all the href links on a page and attach the link with a query parameter with getAttribute and setAttribute methods
 
 (function () {
-var links = document.querySelectorAll('a[href$=".pdf"]');
+var links = document.querySelectorAll('a[href$=".com"]');
 var attchmentString = "?utm_source=prashanth";
 links.forEach(function change(link) {
     var original = link.getAttribute("href");
